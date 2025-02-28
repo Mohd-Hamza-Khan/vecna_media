@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images\IMG_3459.PNG" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>VECNA MEDIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/testing.css">
+    <link rel="stylesheet" href="styles/testing2.css">
+    <link rel="stylesheet" href="styles/testing3.css">
+    <link rel="stylesheet" href="styles/testing8.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/downtext.css">
+    <link rel="stylesheet" href="styles/slant.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+
+    <!-- <div class="main-container">
+        <div class="header">
+            <div class="header-row">
+                <div class="button">
+                    <div class="circle2"></div>
+                    <span class="cursor-scale small">Call Us</span>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="main-container">
+            <div class="header">
+                <div class="header-row">
+                    <!-- Logo inside the button -->
+                    <div class="button">
+                        
+                        <div class="circle2"></div>
+                        <span class="cursor-scale small">Call Us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <!-- <div class="hero-text">
+            <div class="hero-text-content">
+                <h1 class="cursor-scale stagger-text">GSAP Cursor</h1>
+                <h2 class="cursor-scale small stagger-text">Animation</h2>
+            </div>
+        </div> -->
+        <div class="hero-text">
+            <div class="hero-text-content">
+                <h1 class="cursor-scale stagger-text">
+                    <span>V</span><span>E</span><span>C</span><span>N</span><span>A</span>
+                    <span>M</span><span>E</span><span>D</span><span>I</span><span>A</span>
+                </h1>
+                <h2 class="cursor-scale small stagger-text">
+                    <span>C</span><span>R</span><span>A</span><span>F</span><span>T</span>&nbsp
+                    <span>I</span><span>M</span><span>P</span><span>A</span><span>C</span>
+                    <span>T</span>
+                </h2>
+            </div>
+        </div>
+
+        <script>
+            // Apply staggered animation to each letter within elements with the class 'stagger-text'
+            gsap.from(".stagger-text span", {
+                opacity: 0,
+                y: 50,
+                duration: 1.5,
+                stagger: function (index) {
+                    return index * 0.1; // Incrementally increase delay for each letter
+                },
+                ease: "power2.out"
+            });
+        </script>
+
+        <!-- Adding learnmorebotton folder -->
+         <div id="container1">
+            <img src="images\IMG_3459.PNG" alt="Logo" height="400px" width="400px" class="logo">
+        </div>
+        <div id="container2">
+            
+            <button class="learn-more">
+                <span class="circle1" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="btn-text">Learn More</span>
+            </button>
+        </div>
+
+        <!-- Custom Divs with Cursor Scale Animation -->
+        <!-- <div class="custom-div-1"><span class="cursor-scale">Custom Div 1</span></div> -->
+
+
+        <!-- ...existing code... -->
+        <div class="notebook-video-section">
+            <div class="notebook-container">
+                <ul class="notebook-cards">
+                    <li class="notebook-card">
+                        <div class="notebook-card-body">
+                            <video class="notebook-card-video" controls autoplay loop>
+                                <source
+                                    src="https://videos.pexels.com/video-files/7551053/7551053-uhd_2560_1440_30fps.mp4"
+                                    type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </li>
+                    <!-- Add more cards as needed -->
+                    <!-- <li class="notebook-card">
+                <div class="notebook-card-body">
+                    <video class="notebook-card-video" controls autoplay loop>
+                        <source src="path/to/your/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </li> -->
+                    <!-- Repeat for more videos -->
+                </ul>
+            </div>
+        </div>
+        <!-- ...existing code... -->
+
+
+        <!-- Adding testing8
+        <div class="testing8">
+            <div class="neerail-scroll-animations-example" data-scroll-container>
+                <div class="neerail-scrollsection" data-scroll-section>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="2">
+                        <img class="neerail-image" src="https://www.youtube.com/shorts/AX_zKUI0BNo" alt="Random Image" width="1240" height="874">
+                    </div>
+                    <div class="neerail-item neerail-big" data-scroll data-scroll-speed="1">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 2">
+                    </div>
+                    <div class="neerail-item neerail-small neerail-horizontal" data-scroll data-scroll-speed="4">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 3">
+                    </div>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="3">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 4">
+                    </div>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="2">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 1">
+                    </div>
+                    <div class="neerail-item neerail-big" data-scroll data-scroll-speed="1">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 2">
+                    </div>
+                    <div class="neerail-item neerail-small neerail-horizontal" data-scroll data-scroll-speed="4">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 3">
+                    </div>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="3">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 4">
+                    </div>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="2">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 1">
+                    </div>
+                    <div class="neerail-item neerail-big" data-scroll data-scroll-speed="1">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 2">
+                    </div>
+                    <div class="neerail-item neerail-small neerail-horizontal" data-scroll data-scroll-speed="4">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 3">
+                    </div>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="3">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 4">
+                    </div>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="2">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 1">
+                    </div>
+                    <div class="neerail-item neerail-big" data-scroll data-scroll-speed="1">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 2">
+                    </div>
+                    <div class="neerail-item neerail-small neerail-horizontal" data-scroll data-scroll-speed="4">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 3">
+                    </div>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="3">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 4">
+                    </div>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="2">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 1">
+                    </div>
+                    <div class="neerail-item neerail-big" data-scroll data-scroll-speed="1">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 2">
+                    </div>
+                    <div class="neerail-item neerail-small neerail-horizontal" data-scroll data-scroll-speed="4">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 3">
+                    </div>
+                    <div class="neerail-item neerail-normal" data-scroll data-scroll-speed="3">
+                        <img class="neerail-image" src="https://img.freepik.com/free-photo/beautiful-isolated-feather_23-2151436655.jpg?t=st=1736062643~exp=1736066243~hmac=d506b6d2a7d7e9c542c467c40658b54b347b644938aa9581586bd1b2386f3218&w=900" alt="Random Image" width="1240" height="874" alt="image 4">
+                    </div>
+                    !-- Repeat more items as needed --
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- Adding scroll animation -->
+
+        <!-- Cards Overlapping animation -->
+        <div class="a1234">
+            <div class="container">
+                <ul id="cards">
+                    <li class="card" id="card1">
+                        <div class="card-body">
+                            <!-- <h2>Card 1</h2> -->
+                            <video width="320" height="240" controls autoplay loop>
+                                <source src="path/to/your/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </li>
+                    <li class="card" id="card2">
+                        <div class="card-body">
+                            <h2>Card 2</h2>
+                        </div>
+                    </li>
+                    <li class="card" id="card3">
+                        <div class="card-body">
+                            <h2>Card 3</h2>
+                        </div>
+                    </li>
+                    <li class="card" id="card4">
+                        <div class="card-body">
+                            <h2>Card 4</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h2 class="slider12"><span class="cursor-scale">WE HAVE WORKED WITH</h2></span>
+        <div class="carousel-container">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 1"></span>
+                    </div>
+                    <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" /> -->
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 2"></span>
+                    </div>
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 3"></span>
+                    </div>
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 4"></span>
+                    </div>
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 5"></span>
+                    </div>
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 1"></span>
+                    </div>
+                    <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" /> -->
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 2"></span>
+                    </div>
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 3"></span>
+                    </div>
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 4"></span>
+                    </div>
+                    <div class="slide"><span class="cursor-scale"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Company 5"></span>
+                    </div>
+                    <!-- Add more logos as needed -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="my-container">
+            <div class="my-left">
+                <h2 class="title"> <span class="cursor-scale">WHY OUR CLIENT CHOOSE US</span></h2>
+            </div>
+
+            <div class="my-right">
+                <div class="recycle-container recycle-craftmanship">
+                    <img src="https://img.freepik.com/premium-vector/mobile_3402-158.jpg?w=740" alt="Recycling Symbol"
+                        class="recycle-symbol">
+                    <div class="text-container">
+                        <p class="heading"><span class="cursor-scale small">Expert Craftsmanship</span></p>
+                        <p class="paragraph">Our skilled editors bring <b><i>years of experience</i></b>, ensuring every
+                            frame, transition, and effect is polished to perfection. Expect videos that stand out with
+                            professional quality.</p>
+                    </div>
+                </div>
+                <div class="recycle-container recycle-fast">
+                    <img src="https://img.freepik.com/premium-vector/mobile_3402-158.jpg?w=740" alt="Recycling Symbol"
+                        class="recycle-symbol">
+                    <div class="text-container">
+                        <p class="heading"><span class="cursor-scale small">Fast & Efficient</span></p>
+                        <p class="paragraph">Need it done quickly? We pride ourselves on a streamlined process that gets
+                            you <b><i>high-quality results</i></b> within your timeframe, so you can keep your projects
+                            on track.</p>
+                    </div>
+                </div>
+                <div class="recycle-container recycle-custom">
+                    <img src="https://img.freepik.com/premium-vector/mobile_3402-158.jpg?w=740" alt="Recycling Symbol"
+                        class="recycle-symbol">
+                    <div class="text-container">
+                        <p class="heading"><span class="cursor-scale small">Custom Solutions</span></p>
+                        <p class="paragraph">Your brand, your style. We work to <b><i>understand your
+                                    unique needs</i></b> and create edits that reflect your vision, delivering content
+                            that resonates with your audience.</p>
+                    </div>
+                </div>
+                <div class="recycle-container recycle-pricing">
+                    <img src="https://img.freepik.com/premium-vector/mobile_3402-158.jpg?w=740" alt="Recycling Symbol"
+                        class="recycle-symbol">
+                    <div class="text-container">
+                        <p class="heading"><span class="cursor-scale small">Clear Pricing</span></p>
+                        <p class="paragraph">Transparency is key. Our pricing is straightforward, with no hidden fees or
+                            unexpected costs, giving you the best <b><i>value for your investment</i></b>, no matter the
+                            project size.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="custom-div-4"><span class="cursor-scale">OUR SELECTED WORK</span></div>
+
+        <!-- animation folder -->
+
+        <!-- Add testing2 -->
+        <div class="testing2">
+            <div class="galleryForever">
+                <div>
+                    <article class="articleForever">
+                        <img src="https://images.pexels.com/photos/104842/bmw-vehicle-ride-bike-104842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="motorbike 1">
+                        <div class="likesForever"><span
+                                class="material-symbols-outlined material-fill-1">favorite</span>12
+                            Likes</div>
+                    </article>
+                    <article class="articleForever">
+                        <img src="https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="motorbike 2">
+                        <div class="likesForever"><span
+                                class="material-symbols-outlined material-fill-1">favorite</span>23
+                            Likes</div>
+                    </article>
+                    <article class="articleForever">
+                        <img src="https://images.pexels.com/photos/4542987/pexels-photo-4542987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="notorbike 3">
+                        <div class="likesForever"><span
+                                class="material-symbols-outlined material-fill-1">favorite</span>6 Likes
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="articleForever">
+                        <img src="https://images.pexels.com/photos/954929/pexels-photo-954929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="mountains 1">
+                        <div class="likesForever"><span
+                                class="material-symbols-outlined material-fill-1">favorite</span>22
+                            Likes</div>
+                    </article>
+                    <article class="articleForever">
+                        <img src="https://images.pexels.com/photos/950859/pexels-photo-950859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="hand">
+                        <div class="likesForever"><span
+                                class="material-symbols-outlined material-fill-1">favorite</span>18
+                            Likes</div>
+                    </article>
+                    <article class="articleForever">
+                        <img src="https://images.pexels.com/photos/1741570/pexels-photo-1741570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="beach">
+                        <div class="likesForever"><span
+                                class="material-symbols-outlined material-fill-1">favorite</span>145
+                            Likes</div>
+                    </article>
+                </div>
+                <div>
+                    <article class="articleForever">
+                        <img src="https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="man on rock">
+                        <div class="likesForever"><span
+                                class="material-symbols-outlined material-fill-1">favorite</span>145
+                            Likes</div>
+                    </article>
+                    <article class="articleForever">
+                        <img src="https://images.pexels.com/photos/1006121/pexels-photo-1006121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="trees">
+                        <div class="likesForever"><span
+                                class="material-symbols-outlined material-fill-1">favorite</span>98
+                            Likes</div>
+                    </article>
+                    <article class="articleForever">
+                        <img src="https://images.pexels.com/photos/1785493/pexels-photo-1785493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="sky">
+                        <div class="likesForever"><span
+                                class="material-symbols-outlined material-fill-1">favorite</span>37
+                            Likes</div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="textColorChange">
+                <!-- sec1 -->
+                <h1>ABOUT US</h1>
+            </div>
+
+            <div class="textColorChange">
+                <!-- sec2 -->
+                <p class="reveal-type" data-bg-color="#000" data-fg-color="#fc506de2"><b>EFFORTLESS CREATIVITY, <br>ZERO
+                        NONSENSE</b>
+                </p>
+            </div>
+            <div class="textColorChange">
+                <!-- sec4 -->
+                <p class="reveal-type" data-bg-color="#000" data-fg-color="#4350e2"><b>NO FLUFF,....<br> NO STRESS,...
+                        <br>JUST GREAT CONTENT,....<br> TAILORED TO YOU.</b>
+                </p>
+            </div>
+            <div class="textColorChange">
+                <!-- sec4 -->
+                <p class="reveal-type" data-bg-color="#000" data-fg-color="#16a085"><b>FROM FRESH IDEAS POLISHED EDITS,
+                        WE HANDLE THE <br>DETAILS SO YOU CAN FOCUS ON THE BIG PICTURE.</b></p>
+            </div>
+            <div class="textColorChange">
+                <!-- sec3 -->
+                <p class="reveal-type" data-bg-color="#000" data-fg-color=""><b>EVERY DAY, WE'RE INSPIRED <br>TO BRING
+                        YOUR IDEAS TO LIFE WITH STUNNING VIDEOS AND CONTENT.</b> </p>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="custom-div-5"><span class="cursor-scale">Custom Div 5</span></div> -->
+        <div class="my-container">
+            <div class="my-left">
+                <h2 class="title"><span class="cursor-scale">Transform Your Vision with Us</span></h2>
+            </div>
+
+            <div class="my-right">
+                <div class="recycle-container recycle-ideation">
+                    <div class="text-container">
+                        <p class="heading"><span class="cursor-scale small">CONTENT IDEATION</span></p>
+                        <p class="paragraph"><span class="cursor-scale small"><i><b>Simple, effective, and
+                                        brand-focused.</i></b>
+                                <br><br>We ignite your ideas, turning them into engaging, tailored content that speaks
+                                to your audience.</span></p>
+                    </div>
+                </div>
+
+                <div class="recycle-container recycle-scripting">
+                    <div class="text-container">
+                        <p class="heading"><span class="cursor-scale small">SCRIPTING</span></p>
+                        <p class="paragraph"><span class="cursor-scale small"><i>Words matter. We craft scripts that
+                                    connect, engage, and deliver results.</i> <br><br> Our writing captures your message
+                                perfectly, whether it's for social media, commercials, or brand storytelling. Clear,
+                                compelling, and purposeful.</span></p>
+                    </div>
+                </div>
+
+                <div class="recycle-container recycle-editing">
+                    <div class="text-container">
+                        <p class="heading"><span class="cursor-scale small">EDITING</span></p>
+                        <p class="paragraph"><span class="cursor-scale small"><i>We ensure every second
+                                    counts.</i><br><br> Through meticulous editing, we turn your footage into polished, professional content with seamless flow, enhanced visuals, and dynamic effects.</span></p>
+                    </div>
+                </div>
+
+                <div class="recycle-container recycle-social">
+                    <div class="text-container">
+                        <p class="heading"><span class="cursor-scale small">MANAGING AND POSTING ON SOCIALS</span></p>
+                        <p class="paragraph"><span class="cursor-scale small"><i>Great content deserves great
+                                    exposure.</i> <br><br>We manage scheduling and posting, optimizing your content for maximum engagement, so your social media thrives while you focus on what you do best.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Adding testing3 -->
+        <div class="testing3">
+            <section class="profiles-timing" style="background-color: transparent;">
+                <div class="avatar-timing" style="--bg-img:url(https://picsum.photos/id/112/300/200)">
+                    <div class="avatar-img-timing">
+                        <img
+                            src="https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/profile-1-trans.png">
+                    </div>
+                    <p>Saima</p>
+                </div>
+
+                <div class="avatar-timing" style="--bg-img:url(https://picsum.photos/id/54/300/200)">
+                    <div class="avatar-img-timing">
+                        <img
+                            src="https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/profile-8-trans.png">
+                    </div>
+                    <p>Uzaif</p>
+                </div>
+
+                <div class="avatar-timing" style="--bg-img:url(https://picsum.photos/id/48/300/200)">
+                    <div class="avatar-img-timing">
+                        <img
+                            src="https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/profile-3-trans.png">
+                    </div>
+                    <p>Ronald</p>
+                </div>
+
+                <div class="avatar-timing" style="--bg-img:url(https://picsum.photos/id/210/300/200)">
+                    <div class="avatar-img-timing">
+                        <img
+                            src="https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/profile-5-trans.png">
+                    </div>
+                    <p>Elizabeth</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Add testing -->
+        <!-- Testimonials Start -->
+        <section class="testimonial-section white-bg position-relative overflow-hidden">
+            <h2 class="title text-center">Testimonials</h2>
+            <div class="container text-white">
+                <div class="row g-0 left-row">
+                    <div class="col-md-6">
+                        <div class="content border-end-0 ">
+                            <h3>Bertie Norton</h3>
+                            <p>"Aenean pulvinar dui ornare, feugiat lorem non, ultrices justo. Quam elit ultrices urna,
+                                eget eleifend arcu risus id metus. Maecenas ex enim, mattis eu velit vitae, blandit
+                                mattis sapien. Sed aliquam leo et semper vestibulum."</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-box">
+                            <img src="https://www.yudiz.com/codepen/interior-design/person-01.jpg" class="img-fluid"
+                                alt="person">
+                        </div>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="row g-0 reverse-row right-row">
+                    <div class="col-md-6">
+                        <div class="img-box">
+                            <img src="https://www.yudiz.com/codepen/interior-design/person-02.jpg" class="img-fluid"
+                                alt="person">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="content border-start-0">
+                            <h3>Mike Perry</h3>
+                            <p>"Aenean pulvinar dui ornare, feugiat lorem non, ultrices justo. Quam elit ultrices urna,
+                                eget eleifend arcu risus id metus. Maecenas ex enim, mattis eu velit vitae, blandit
+                                mattis sapien. Sed aliquam leo et semper vestibulum."</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+        </section>
+        <!-- Testimonials End -->
+
+
+
+        <div class="footersee">
+            <div class="colsee col2see">
+                <p>Ready to tell your brand's story?</p>
+                <p>Schedule a discovery call to scale your videos with us!</p>
+                <!-- <button type="button" class="btn btn-primary">Click Me</button> -->
+                <!-- <p>Privacy Policy</p>
+            <p>Terms of service</p> -->
+            </div>
+        </div>
+        <div class="slant">
+            <div class="scroll-container">
+                <div class="scrolling-text">
+                    <ul class="text-list">
+                        <li><span class="scroll-item">Stay Connected</span></li>
+                    </ul>
+                    <ul class="text-list" aria-hidden="true">
+                        <li><span class="scroll-item">Stay Connected</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="custom-div-6"><span class="cursor-scale">Custom Div 6</span></div> -->
+
+
+        <!-- Stylish Fullscreen Footer Section -->
+        <footer id="footer">
+            <div class="col col1">
+                <h3>VECNA MEDIA</h3>
+                <p>Made with <span style="color: #BA6573;">❤</span> by FARHAN</p>
+                <div class="social">
+                    <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img
+                            src="images\IMG_3459.PNG" alt="" /></a>
+                    <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img
+                            src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+                    <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img
+                            src="images\instagram.png" alt="" style="fill: red;"/></a>
+                            <!-- <a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Freepik - Flaticon</a> -->
+                </div>
+                <p style="color: #818181; font-size: smaller">2025 © All Rights Reserved</p>
+            </div>
+            <div class="col col2">
+                <p>About</p>
+                <p>Our mission</p>
+                <p>Privacy Policy</p>
+                <p>Terms of service</p>
+            </div>
+            <div class="col col3">
+                <p>Services</p>
+                <p>Products</p>
+                <p>Join our team</p>
+                <p>Partner with us</p>
+            </div>
+        </footer>
+
+        <!-- External JS files (GSAP, ScrollTrigger, Lenis for smooth scrolling, etc.) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/split-type"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lenis@2.0.0"></script>
+        <script src="scripts/scrollTrigger.js"></script>
+        <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="scripts/testing.js"></script>
+        <script src="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+        <script src="scripts/testing8.js"></script>
+        <script src="scripts/script2.js"></script>
+        <script src="scripts/video.js"></script>
+        <script src="script.js"></script>
+        <script src="script/downtext.js"></script>
+</body>
+
+</html>
