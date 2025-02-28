@@ -1111,6 +1111,57 @@ i {
     /* transition: 0.1s ease; */
 }
 
+/* Responsive Design */
+
+/* For smaller screens (like tablets or mobile) */
+@media (max-width: 768px) {
+    .button span {
+        font-size: 1.2rem; /* Smaller text size */
+    }
+    
+    .logo {
+        max-width: 100px; /* Reduce logo size */
+    }
+    
+    .header-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        margin-top: 10px; /* Add margin to space out the button */
+    }
+}
+
+/* For very small screens (like mobile phones) */
+@media (max-width: 480px) {
+    .button span {
+        font-size: 1rem; /* Even smaller text size */
+    }
+    
+    .circle2 {
+        width: 150%; /* Adjust circle size */
+    }
+    
+    .logo {
+        max-width: 80px; /* Further reduce logo size */
+    }
+    
+    .button {
+        padding: 8px 16px; /* Smaller padding for the button */
+    }
+}
+
+/* Larger screens (like desktops and laptops) */
+@media (min-width: 1024px) {
+    .button span {
+        font-size: 1.8rem; /* Slightly larger text size for desktops */
+    }
+
+    .logo {
+        max-width: 150px; /* Larger logo for bigger screens */
+    }
+}
 
 /* Testimonials */
 .testimonial-section {
