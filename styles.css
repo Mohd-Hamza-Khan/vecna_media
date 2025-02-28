@@ -985,6 +985,69 @@ h1 {
 .learn-more:hover .btn-text {
     color: var(--white);
 }
+/* Responsive Adjustments */
+
+/* For small screens */
+@media (max-width: 600px) {
+    .learn-more {
+        width: 10rem;
+        /* Reduce width on small screens */
+    }
+
+    .learn-more .circle1 {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .learn-more .circle1 .icon.arrow {
+        left: 0.5rem;
+        width: 1rem;
+        height: 0.1rem;
+    }
+
+    .learn-more .circle1 .icon.arrow::before {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .learn-more .btn-text {
+        font-size: 0.9rem;
+        /* Smaller font size */
+        margin-left: 2.5rem;
+        /* Adjust the position of text */
+    }
+}
+
+/* For medium screens (e.g., tablets) */
+@media (max-width: 1024px) {
+    .learn-more {
+        width: 12rem;
+        /* Adjust the width */
+    }
+
+    .learn-more .circle1 {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+
+    .learn-more .circle1 .icon.arrow {
+        left: 0.55rem;
+        width: 1.05rem;
+        height: 0.12rem;
+    }
+
+    .learn-more .circle1 .icon.arrow::before {
+        width: 0.55rem;
+        height: 0.55rem;
+    }
+
+    .learn-more .btn-text {
+        font-size: 1rem;
+        /* Slightly smaller font size */
+        margin-left: 2.7rem;
+        /* Adjust text margin */
+    }
+}
 
 /* styling for button animation */
 
