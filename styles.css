@@ -985,6 +985,69 @@ h1 {
 .learn-more:hover .btn-text {
     color: var(--white);
 }
+/* Responsive Adjustments */
+
+/* For small screens */
+@media (max-width: 600px) {
+    .learn-more {
+        width: 10rem;
+        /* Reduce width on small screens */
+    }
+
+    .learn-more .circle1 {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .learn-more .circle1 .icon.arrow {
+        left: 0.5rem;
+        width: 1rem;
+        height: 0.1rem;
+    }
+
+    .learn-more .circle1 .icon.arrow::before {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .learn-more .btn-text {
+        font-size: 0.9rem;
+        /* Smaller font size */
+        margin-left: 2.5rem;
+        /* Adjust the position of text */
+    }
+}
+
+/* For medium screens (e.g., tablets) */
+@media (max-width: 1024px) {
+    .learn-more {
+        width: 12rem;
+        /* Adjust the width */
+    }
+
+    .learn-more .circle1 {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+
+    .learn-more .circle1 .icon.arrow {
+        left: 0.55rem;
+        width: 1.05rem;
+        height: 0.12rem;
+    }
+
+    .learn-more .circle1 .icon.arrow::before {
+        width: 0.55rem;
+        height: 0.55rem;
+    }
+
+    .learn-more .btn-text {
+        font-size: 1rem;
+        /* Slightly smaller font size */
+        margin-left: 2.7rem;
+        /* Adjust text margin */
+    }
+}
 
 /* styling for button animation */
 
@@ -1048,6 +1111,57 @@ i {
     /* transition: 0.1s ease; */
 }
 
+/* Responsive Design */
+
+/* For smaller screens (like tablets or mobile) */
+@media (max-width: 768px) {
+    .button span {
+        font-size: 1.2rem; /* Smaller text size */
+    }
+    
+    .logo {
+        max-width: 100px; /* Reduce logo size */
+    }
+    
+    .header-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        margin-top: 10px; /* Add margin to space out the button */
+    }
+}
+
+/* For very small screens (like mobile phones) */
+@media (max-width: 480px) {
+    .button span {
+        font-size: 1rem; /* Even smaller text size */
+    }
+    
+    .circle2 {
+        width: 150%; /* Adjust circle size */
+    }
+    
+    .logo {
+        max-width: 80px; /* Further reduce logo size */
+    }
+    
+    .button {
+        padding: 8px 16px; /* Smaller padding for the button */
+    }
+}
+
+/* Larger screens (like desktops and laptops) */
+@media (min-width: 1024px) {
+    .button span {
+        font-size: 1.8rem; /* Slightly larger text size for desktops */
+    }
+
+    .logo {
+        max-width: 150px; /* Larger logo for bigger screens */
+    }
+}
 
 /* Testimonials */
 .testimonial-section {
