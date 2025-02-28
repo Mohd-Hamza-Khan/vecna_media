@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* Just for scrolling */
+}
+
+.video-containertoget {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: 0;
+}
+
+#myVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transition: transform 0.2s ease-out, top 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out;
+    z-index: 1;
+    border-radius: 50px;
+    clip-path: inset(0% round 50px);
+}
+
+.sideVideotoget {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 30vh;
+    margin-right: 35px;
+    margin-left: 35px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    border-radius: 25px;
+}
+
+#leftVideo {
+    left: 0;
+}
+
+#rightVideo {
+    right: 0;
+}

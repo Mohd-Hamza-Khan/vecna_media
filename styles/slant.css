@@ -1,0 +1,54 @@
+:root {
+    --gap: 4rem; /* Gap between text items */
+    --bg-dark: #333; /* Background color */
+  }
+  
+  .slant {
+    background: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .scroll-container {
+    width: 100%;
+  }
+  
+  .scrolling-text {
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    gap: var(--gap);
+    transform: rotate(-4deg);
+  }
+  
+  .text-list {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: scroll-animation 8s linear infinite;
+  }
+  
+  .scroll-item {
+    background: linear-gradient(to right, #a2a2a2, #ffffff, #212121);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 400;
+    font-size: 25ch;
+  }
+  
+  @keyframes scroll-animation {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
