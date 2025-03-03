@@ -787,7 +787,7 @@ footer h3 {
 
 
 /* styling for animation folder  */
-.textColorChange {
+/* .textColorChange {
     height: 100vh;
     padding: 0 clamp(4rem, 12vw, 20rem);
     display: grid;
@@ -798,7 +798,7 @@ footer h3 {
 
 .textColorChange,
 h1 {
-    color: #16a085;
+    color: white;
     text-align: center;
     font-size: 10rem;
 }
@@ -815,10 +815,10 @@ h1 {
 .textColorChange:nth-of-type(4) {
     background: #000;
     /* color: white; */
-}
+/* } */
 
 
-/* Responsive styles */
+/* Responsive styles *
 @media (max-width: 1200px) {
 
     .textColorChange,
@@ -855,7 +855,91 @@ h1 {
     h1 {
         font-size: 3rem;
     }
+} */
+
+
+/* styling for animation folder  */
+.textColorChange {
+    height: 100vh;
+    padding: 0 clamp(4rem, 12vw, 20rem);
+    display: grid;
+    place-content: center;
+    background-color: #000;
+    padding-top: 60px;
 }
+
+.textColorChange,
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 10rem;
+}
+
+.textColorChange p {
+    font-size: clamp(2rem, 5vw, 8rem);
+    word-wrap: break-all; /* Allow the text to break at word boundaries */
+    overflow-wrap: break-word; /* Ensure text will break if it's too long for the container */
+    white-space: normal; /* Allow text to wrap normally */
+    word-wrap: normal; /* Don't break words in the middle */
+}
+
+/* Additional changes for specific sections with long words */
+.textColorChange:nth-of-type(3) {
+    background: #000;
+}
+
+.textColorChange:nth-of-type(4) {
+    background: #000;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .textColorChange,
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .textColorChange,
+    h1 {
+        font-size: 6rem;
+    }
+    .textColorChange p {
+        word-wrap: break-all;
+      
+    }
+
+}
+
+@media (max-width: 768px) {
+    .textColorChange {
+        padding: 0 2rem;
+    }
+
+    .textColorChange,
+    h1 {
+        font-size: 4rem;
+    }
+    .textColorChange p {
+        word-wrap: break-all;
+    }
+}
+
+@media (max-width: 576px) {
+    .textColorChange {
+        padding: 0 1rem;
+    }
+
+    .textColorChange,
+    h1 {
+        font-size: 3rem;
+    }
+    .textColorChange p {
+        word-wrap: break-all;
+    }
+}
+
 
 
 
